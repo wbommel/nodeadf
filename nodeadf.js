@@ -10,5 +10,6 @@ module.exports={
         fs = diContainer.fs
 
         return this
-    }
+    },
+    
 }
