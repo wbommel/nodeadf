@@ -1,6 +1,9 @@
 "use strict";
 
 /* trying to define needed functionality
+
+Info links:
+    - http://lclevy.free.fr/adflib/adf_info.html    (detailed description of disk structures incl c example code if aplicable)
  
 Handle legal AmigaOS discs:
     - read directory tree
@@ -9,6 +12,9 @@ Handle legal AmigaOS discs:
     - delete files / directories
 
 Sector editor:
+    - get blocktype (optional scan image for FFS Datablocks to identify them since they have no OFS data block header, 
+        info "unknown/data block" when not scanned and 
+        "unknown (scanned)" / "data block (scanned)" when scanned?)
     - read sector
     - read / write byte
     - read / write word
